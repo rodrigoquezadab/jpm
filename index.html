@@ -8,56 +8,80 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link 
-      rel="stylesheet" 
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <style>
-      .gallery-img {
-        cursor: pointer;
-        transition: transform 0.3s;
-      }
-      .gallery-img:hover {
-        transform: scale(1.05);
-      }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.5/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body class="bg-light text-dark">
-    <header class="bg-white shadow py-4 mb-5">
-      <div class="container text-center">
-        <h1 class="display-4">Juan Pablo Trillo</h1>
-        <p class="lead">
-          Sommelier chileno en California - Más de 10 años compartiendo el vino
-        </p>
+  <body>
+    <!-- Navbar fija y animada -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Juan Pablo Trillo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeria">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownLanguage" data-bs-toggle="dropdown" aria-expanded="false">
+                Idioma
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                <li><a class="dropdown-item" href="#" onclick="changeLanguage('es')">Español</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeLanguage('fr')">Français</a></li>
+                <!-- Agregar más idiomas aquí -->
+              </ul>
+            </div>
+            
+          </ul>
+        </div>
       </div>
-    </header>
+    </nav>
 
     <main class="container">
       <!-- Sobre mí -->
-      <section id="sobre-mi" class="mb-5">
-        <h2 class="h3 mb-3">Sobre mí</h2>
+      <section id="sobre-mi">
+        <h2 class="h3 mb-4" data-i18n="about_title">Sobre mí</h2>
         <div class="row align-items-center">
           <div class="col-md-6">
-            <p>
-              Soy JP Juan Pablo, Sommelier certificado radicado en California,
-              con más de una década de experiencia internacional en la industria
-              del vino. He recorrido regiones vinícolas de renombre como España,
-              Italia, Francia, Chile, Argentina y Estados Unidos.
-            </p>
-            <p>
-              Actualmente trabajo en el restaurante bistró "Tasting House" en Los
-              Gatos, California, como Wine & Beverage Director y Head Floor
-              Sommelier.
-            </p>
-            <p>
-              Certificado por Court of Master Sommeliers (Certified Level), WSET
-              (Advanced Level), San Francisco Wine School, Wine Judge Program (3
-              años) y Maître-Sabreur por la Confrérie du Sabre d'Or.
+            <p data-i18n="about_paragraph_1"></p>
+            <p data-i18n="about_paragraph_2">
+              
             </p>
             <blockquote class="blockquote">
-              <p>
-                "El vino cuenta historias, une a las personas, y debe volver a la
-                mesa como parte de la vida diaria."
+              <p class="mb-0">
+                "El vino cuenta historias, une a las personas y debe ser parte
+                de la vida diaria."
               </p>
             </blockquote>
           </div>
@@ -72,66 +96,143 @@
       </section>
 
       <!-- Servicios -->
-      <section id="servicios" class="mb-5">
-        <h2 class="h3 mb-3">Servicios</h2>
+      <section id="servicios">
+        <h2 class="h3 mb-4">Servicios</h2>
         <div class="accordion" id="serviciosAccordion">
+          <!-- Catas privadas -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading1">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse1"
+                aria-expanded="true"
+              >
                 Catas privadas
               </button>
             </h2>
-            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#serviciosAccordion">
+            <div
+              id="collapse1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#serviciosAccordion"
+            >
               <div class="accordion-body">
-                Experiencias personalizadas para grupos pequeños o eventos especiales, con selección exclusiva de vinos y maridajes.
+                Disfruta de una experiencia única con catas privadas en tu
+                hogar, empresa o evento especial. Selecciono personalmente los
+                vinos y creo maridajes personalizados para que explores el mundo
+                del vino de forma sensorial y entretenida.
+                <br /><strong>Ejemplo:</strong> Cata temática de vinos italianos
+                con maridaje de quesos y charcutería artesanal para un grupo de
+                10 personas.
               </div>
             </div>
           </div>
+          <!-- Consultoría -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading2">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2"
+              >
                 Consultoría a restaurantes, hoteles y bares
               </button>
             </h2>
-            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+            <div
+              id="collapse2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#serviciosAccordion"
+            >
               <div class="accordion-body">
-                Optimización de cartas de vinos, entrenamiento de personal y mejoras en la experiencia del cliente.
+                Asesoro establecimientos gastronómicos para optimizar sus cartas
+                de vino, crear experiencias memorables para los clientes y
+                capacitar al equipo en servicio de bebidas.
+                <br /><strong>Ejemplo:</strong> Rediseño completo de la carta de
+                vinos de un restaurante mediterráneo con énfasis en vinos
+                locales y sostenibles.
               </div>
             </div>
           </div>
+          <!-- Entrenamiento para equipos -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading3">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse3"
+              >
                 Entrenamiento para equipos
               </button>
             </h2>
-            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+            <div
+              id="collapse3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#serviciosAccordion"
+            >
               <div class="accordion-body">
-                Formación profesional para staff de servicio, ventas o sommeliers junior en lenguaje, cata y servicio de vino.
+                Capacito al personal de servicio en técnicas de atención,
+                lenguaje del vino y maridaje para mejorar la experiencia del
+                cliente. Adaptado a todos los niveles de conocimiento.
+                <br /><strong>Ejemplo:</strong> Programa de 4 sesiones para
+                staff de sala y baristas sobre servicio de vino por copa,
+                decantación y recomendaciones de maridaje.
               </div>
             </div>
           </div>
+          <!-- Mantenimiento de cavas privadas -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading4">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse4"
+              >
                 Mantenimiento de cavas privadas
               </button>
             </h2>
-            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+            <div
+              id="collapse4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#serviciosAccordion"
+            >
               <div class="accordion-body">
-                Organización, inventario y conservación de colecciones personales para clientes exigentes.
+                Ofrezco gestión profesional de colecciones de vino:
+                organización, inventario, rotación y asesoría en nuevas
+                adquisiciones. Ideal para coleccionistas y amantes del vino.
+                <br /><strong>Ejemplo:</strong> Organización y digitalización
+                del inventario de una cava privada con más de 200 etiquetas
+                premium.
               </div>
             </div>
           </div>
+          <!-- Educación y talleres para aficionados -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading5">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse5"
+              >
                 Educación y talleres para aficionados
               </button>
             </h2>
-            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+            <div
+              id="collapse5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#serviciosAccordion"
+            >
               <div class="accordion-body">
-                Sesiones didácticas sobre vino para principiantes o entusiastas que deseen profundizar su conocimiento.
+                Talleres diseñados para entusiastas del vino que desean aprender
+                sobre cata, regiones vinícolas, estilos y conservación de vinos.
+                Accesibles, prácticos y entretenidos.
+                <br /><strong>Ejemplo:</strong> Curso introductorio de 3 días
+                sobre vinos del Nuevo Mundo para principiantes, con
+                degustaciones guiadas.
               </div>
             </div>
           </div>
@@ -139,122 +240,144 @@
       </section>
 
       <!-- Blog -->
-      <section id="blog" class="mb-5">
-        <h2 class="h3 mb-3">Blog / Recomendaciones</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="./assets/maridaje-vinos-chilenos.jpg" class="card-img-top" alt="Maridaje">
+      <section id="blog">
+        <h2 class="h3 mb-4">Blog / Recomendaciones</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <img
+                src="./assets/maridaje-vinos-chilenos.jpg"
+                class="card-img-top"
+                alt="Maridaje"
+              />
               <div class="card-body">
                 <h5 class="card-title">Maridaje perfecto</h5>
-                <p class="card-text">Descubre cómo elegir el vino ideal para cada ocasión y tipo de comida.</p>
+                <p class="card-text">
+                  Cómo lograr el equilibrio ideal entre vinos y platos.
+                </p>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="./assets/region-de-alsacia-scaled-1.jpg" class="card-img-top" alt="Regiones vinícolas">
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <img
+                src="./assets/region-de-alsacia-scaled-1.jpg"
+                class="card-img-top"
+                alt="Regiones vinícolas"
+              />
               <div class="card-body">
                 <h5 class="card-title">Regiones vinícolas</h5>
-                <p class="card-text">Explorando los mejores valles vitivinícolas del mundo, desde Napa hasta Mendoza.</p>
+                <p class="card-text">
+                  Explora las mejores zonas productoras de vino del mundo.
+                </p>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="./assets/cata-vino.jpg" class="card-img-top" alt="Consejos de cata">
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <img
+                src="./assets/cata-vino.jpg"
+                class="card-img-top"
+                alt="Consejos de cata"
+              />
               <div class="card-body">
                 <h5 class="card-title">Consejos de cata</h5>
-                <p class="card-text">Aprende a catar como un profesional con estos tips esenciales para aficionados y expertos.</p>
+                <p class="card-text">
+                  Tips prácticos para disfrutar aún más del vino.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      
 
       <!-- Galería -->
-      <section id="galeria" class="mb-5">
-        <h2 class="h3 mb-3">Galería</h2>
-        <p>Imágenes de eventos, catas, viajes y momentos especiales.</p>
+      <section id="galeria">
+        <h2 class="h3 mb-4">Galería</h2>
         <div class="row g-3">
           <div class="col-sm-4">
-            <img src="./assets/team.jpeg" class="img-fluid gallery-img rounded" data-bs-toggle="modal" data-bs-target="#modal1">
+            <img
+              src="./assets/team.jpeg"
+              class="gallery-img img-fluid"
+              data-bs-toggle="modal"
+              data-bs-target="#modal1"
+              alt="Evento 1"
+            />
           </div>
           <div class="col-sm-4">
-            <img src="./assets/team2.jpg" class="img-fluid gallery-img rounded" data-bs-toggle="modal" data-bs-target="#modal2">
+            <img
+              src="./assets/team2.jpg"
+              class="gallery-img img-fluid"
+              data-bs-toggle="modal"
+              data-bs-target="#modal2"
+              alt="Evento 2"
+            />
           </div>
           <div class="col-sm-4">
-            <img src="./assets/maridaje-vinos-chilenos.jpg" class="img-fluid gallery-img rounded" data-bs-toggle="modal" data-bs-target="#modal3">
-          </div>
-        </div>
-        <!-- Modales de imágenes -->
-        <div class="modal fade" id="modal1" tabindex="-1">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <img src="img1.jpg" class="img-fluid rounded" />
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modal2" tabindex="-1">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <img src="img2.jpg" class="img-fluid rounded" />
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modal3" tabindex="-1">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <img src="img3.jpg" class="img-fluid rounded" />
-            </div>
+            <img
+              src="./assets/maridaje-vinos-chilenos.jpg"
+              class="gallery-img img-fluid"
+              data-bs-toggle="modal"
+              data-bs-target="#modal3"
+              alt="Evento 3"
+            />
           </div>
         </div>
       </section>
 
       <!-- Testimonios -->
-      <section id="testimonios" class="mb-5">
-        <h2 class="h3 mb-3">Testimonios</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100 border-0 shadow-sm">
+      <section id="testimonios">
+        <h2 class="h3 mb-4">Testimonios</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
               <div class="card-body">
-                <p class="card-text">“Juan Pablo nos guió a través de una cata inolvidable. Profesionalismo, pasión y calidez.”</p>
-                <h6 class="card-subtitle text-muted">– María R., San Francisco</h6>
+                <p>
+                  “La pasión de Juan Pablo hizo que nuestra cata fuera
+                  inolvidable.”
+                </p>
+                <small class="text-muted">- María R., San Francisco</small>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100 border-0 shadow-sm">
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
               <div class="card-body">
-                <p class="card-text">“Contratamos su servicio para un evento corporativo y fue un éxito total. ¡Repetiremos!”</p>
-                <h6 class="card-subtitle text-muted">– Alejandro M., Los Ángeles</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body">
-                <p class="card-text">“Su conocimiento del vino y su manera de transmitirlo nos encantó. Altamente recomendado.”</p>
-                <h6 class="card-subtitle text-muted">– Claudia S., Santa Clara</h6>
+                <p>“Profesionalismo y carisma. ¡Una noche memorable!”</p>
+                <small class="text-muted">- Alejandro M., Los Ángeles</small>
               </div>
             </div>
           </div>
         </div>
-      </section>      
+      </section>
 
       <!-- Contacto -->
-      <section id="contacto" class="mb-5">
-        <h2 class="h3 mb-3">Contacto</h2>
+      <section id="contacto">
+        <h2 class="h3 mb-4">Contacto</h2>
         <form class="row g-3">
           <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Nombre" />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nombre"
+              required
+            />
           </div>
           <div class="col-md-6">
-            <input type="email" class="form-control" placeholder="Correo electrónico" />
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Correo electrónico"
+              required
+            />
           </div>
           <div class="col-12">
-            <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
+            <textarea
+              class="form-control"
+              rows="4"
+              placeholder="Mensaje"
+              required
+            ></textarea>
           </div>
           <div class="col-12">
             <button type="submit" class="btn btn-danger">Enviar</button>
@@ -263,18 +386,82 @@
       </section>
     </main>
 
-    <footer class="bg-white text-center py-4 border-top">
+    <footer class="text-center py-4">
       <div class="container">
-        <p class="mb-2">© 2025 Juan Pablo Trillo - Sommelier</p>
+        <p class="mb-2">© 2025 Juan Pablo Trillo — Sommelier</p>
         <div>
-          <a href="#" class="text-dark me-3"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="text-dark me-3"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-dark me-3"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="me-3"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+   <script>
+    const resources = {
+      es: {
+        translation: {
+          about_title: "Sobre mí",
+          about_paragraph_1:
+            "Soy JP Juan Pablo, sommelier certificado en California, con experiencia internacional en la industria del vino. He trabajado en España, Italia, Francia, Chile, Argentina y Estados Unidos.",
+            about_paragraph_2: "Actualmente soy Wine & Beverage Director y Head Floor Sommelier en <strong>Tasting House</strong>, Los Gatos."
+              // Agrega más claves y traducciones
+        }
+      },
+      en: {
+        translation: {
+          about_title: "About Me",
+          about_paragraph_1:
+            "I'm JP Juan Pablo, a certified sommelier in California...",
+        }
+      },
+      fr: {
+        translation: {
+          about_title: "À propos de moi",
+          about_paragraph_1:
+            "Je suis JP Juan Pablo, sommelier certifié en Californie...",
+        }
+      }
+    };
+  
+    i18next
+      .use(i18nextBrowserLanguageDetector)
+      .init({
+        resources,
+        fallbackLng: 'es',
+        debug: false
+      }, function(err, t) {
+        updateContent();
+      });
+  
+    function updateContent() {
+      document.querySelectorAll("[data-i18n]").forEach(elem => {
+        const key = elem.getAttribute("data-i18n");
+        const translation = i18next.t(key);
+        if (translation && translation !== key) {
+          elem.innerHTML = translation;
+        }
+      });
+    }
+  
+    function changeLanguage(lng) {
+      i18next.changeLanguage(lng, () => {
+        updateContent();
+      });
+    }
+  </script>
+  
   </body>
 </html>
