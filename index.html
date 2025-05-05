@@ -71,18 +71,20 @@
     <main class="container">
       <!-- Sobre mí -->
       <section id="sobre-mi">
-        <h2 class="h3 mb-4" data-i18n="about_title">Sobre mí</h2>
+        <h2 class="h3 mb-4 text-center" data-i18n="about_title"></h2>
         <div class="row align-items-center">
           <div class="col-md-6">
             <p data-i18n="about_paragraph_1"></p>
-            <p data-i18n="about_paragraph_2">
+            <p data-i18n="about_paragraph_2"></p>
+            <p data-i18n="about_paragraph_3"></p>
+            <p data-i18n="about_paragraph_4"></p>
+            <p data-i18n="about_paragraph_5"></p>
+            <p data-i18n="about_paragraph_6"></p>
+            <p data-i18n="about_paragraph_7"></p>
               
             </p>
             <blockquote class="blockquote">
-              <p class="mb-0">
-                "El vino cuenta historias, une a las personas y debe ser parte
-                de la vida diaria."
-              </p>
+              <p class="mb-0" data-i18n="about_paragraph_8"></p>
             </blockquote>
           </div>
           <div class="col-md-6 text-center">
@@ -97,7 +99,7 @@
 
       <!-- Servicios -->
       <section id="servicios">
-        <h2 class="h3 mb-4">Servicios</h2>
+        <h2 class="h3 mb-4 text-center">Servicios</h2>
         <div class="accordion" id="serviciosAccordion">
           <!-- Catas privadas -->
           <div class="accordion-item">
@@ -241,7 +243,7 @@
 
       <!-- Blog -->
       <section id="blog">
-        <h2 class="h3 mb-4">Blog / Recomendaciones</h2>
+        <h2 class="h3 mb-4 text-center">Blog / Recomendaciones</h2>
         <div class="row g-4">
           <div class="col-md-4">
             <div class="card border-0 shadow-sm h-100">
@@ -293,7 +295,7 @@
 
       <!-- Galería -->
       <section id="galeria">
-        <h2 class="h3 mb-4">Galería</h2>
+        <h2 class="h3 mb-4 text-center">Galería</h2>
         <div class="row g-3">
           <div class="col-sm-4">
             <img
@@ -327,7 +329,7 @@
 
       <!-- Testimonios -->
       <section id="testimonios">
-        <h2 class="h3 mb-4">Testimonios</h2>
+        <h2 class="h3 mb-4 text-center">Testimonios</h2>
         <div class="row g-4">
           <div class="col-md-4">
             <div class="card border-0 shadow-sm h-100">
@@ -348,12 +350,19 @@
               </div>
             </div>
           </div>
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <p>“Una experiencia única. Aprendimos y disfrutamos muchísimo.”</p>
+                <small class="text-muted">- Carla D., Napa Valley</small>
+              </div>
+            </div>
         </div>
       </section>
 
       <!-- Contacto -->
       <section id="contacto">
-        <h2 class="h3 mb-4">Contacto</h2>
+        <h2 class="h3 mb-4 text-center">Contacto</h2>
         <form class="row g-3">
           <div class="col-md-6">
             <input
@@ -409,13 +418,13 @@
         }
       });
     </script>
-   <script>
+   <!-- <script>
     const resources = {
       es: {
         translation: {
           about_title: "Sobre mí",
           about_paragraph_1:
-            "Soy JP Juan Pablo, sommelier certificado en California, con experiencia internacional en la industria del vino. He trabajado en España, Italia, Francia, Chile, Argentina y Estados Unidos.",
+            "Soy JP Juan Pablo, sommelier certificado en California, con experiencia internacional en la industria del vino. He trabajado en algunas de las regiones vitivinícolas más emblemáticas del mundo, como La Rioja y Ribera del Duero en España, Toscana y Piamonte en Italia, Burdeos y Borgoña en Francia, Valle del Maipo y Valle de Colchagua en Chile, Mendoza en Argentina y Napa Valley y Sonoma en Estados Unidos.",
             about_paragraph_2: "Actualmente soy Wine & Beverage Director y Head Floor Sommelier en <strong>Tasting House</strong>, Los Gatos."
               // Agrega más claves y traducciones
         }
@@ -461,7 +470,8 @@
         updateContent();
       });
     }
-  </script>
-  
+  </script> -->
+  <script src="i18n.js"></script>
+
   </body>
 </html>
