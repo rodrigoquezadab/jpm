@@ -16,6 +16,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -24,6 +26,8 @@ body {
   background-color: var(--cream);
   line-height: 1.7;
   overflow-x: hidden;
+  max-width: 100vw;
+  position: relative;
 }
 
 /* Tipografía */
@@ -42,11 +46,37 @@ h1, h2, h3, h4, h5 {
 .ls-1 { letter-spacing: 1px; }
 .ls-2 { letter-spacing: 2px; }
 
+/* --- Prevención de overflow horizontal --- */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* --- Navbar Glassmorphism --- */
 .navbar {
   padding: 1rem 0;
   transition: all 0.4s ease;
-  background-color: transparent; /* Empieza transparente sobre el Hero */
+  background-color: transparent;
+  width: 100%;
+  max-width: 100vw;
+  left: 0;
+  right: 0;
 }
 
 .navbar-brand {
@@ -259,4 +289,37 @@ h1, h2, h3, h4, h5 {
     padding: 1rem;
     border-radius: 0 0 10px 10px;
   }
+}
+
+/* --- Age Gate (NUEVO BLOQUE) --- */
+#age-gate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--wine-dark); 
+  z-index: 99999; /* Máxima prioridad */
+  display: flex; /* Visible por defecto */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity 0.5s ease;
+}
+
+.age-content {
+  background-color: rgba(44, 44, 44, 0.95);
+  border: 2px solid var(--gold);
+  padding: 3rem;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Clase para desvanecer y ocultar completamente */
+.age-hidden {
+  opacity: 0;
+  pointer-events: none; /* Asegura que no bloquee clics durante el desvanecimiento */
 }

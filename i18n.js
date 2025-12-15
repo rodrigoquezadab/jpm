@@ -16,10 +16,15 @@ i18next.use(i18nextBrowserLanguageDetector).init(
             contact: "Contacto",
             language: "Idioma"
           },
+          // Hero section
+          hero_button: "Reservar Experiencia",
+          about_hero_title: "Pasión por la <span class=\"fst-italic text-wine\">cultura líquida</span>.",
+
           // Sección "Sobre mí"
           about_title: "Sobre mí",
           about_paragraph_1: "Soy JP Juan Pablo, sommelier certificado en California, con experiencia internacional en la industria del vino. He trabajado en algunas de las regiones vitivinícolas más emblemáticas del mundo, como La Rioja y Ribera del Duero en España, Toscana y Piamonte en Italia, Burdeos y Borgoña en Francia, Valle del Maipo y Valle de Colchagua en Chile, Mendoza en Argentina y Napa Valley y Sonoma en Estados Unidos.",
           about_paragraph_2: "Actualmente soy Wine & Beverage Director y Head Floor Sommelier en <strong>Tasting House</strong>, Los Gatos.",
+          about_paragraph_9: "Originario de Valdivia, Chile, cuenta con más de 15 años de experiencia en la industria del vino y la hospitalidad a nivel internacional. Es sommelier certificado por la Court of Master Sommeliers (CMS), posee el certificado WSET Level 3 Advanced, y es Wine Judge certificado por la American Wine Society (AWS). Actualmente se prepara para el examen CMS Advanced y está completando su certificación como Italian Wine Specialist. Ha sido seleccionado tres veces para participar en el prestigioso Ruinart Challenge.",
           about_paragraph_3: "Mi pasión es compartir el conocimiento del vino de manera accesible y amena, alejada de pretensiones y enfocada en la experiencia sensorial.",
           about_paragraph_4: "Ofrezco servicios de consultoría, catas privadas y educación vinícola, adaptados a las necesidades de cada cliente.",
           about_paragraph_5: "Mi objetivo es desmitificar el mundo del vino y ayudar a las personas a descubrir nuevos sabores y experiencias.",
@@ -28,6 +33,7 @@ i18next.use(i18nextBrowserLanguageDetector).init(
           about_paragraph_8: "El vino es cultura líquida, una forma de viajar sin moverse del lugar.",
           
           // Sección de Servicios
+          servicios_subtitle: "Experiencias",
           servicios: {
             titulo: "Servicios",
             catasPrivadas: {
@@ -91,7 +97,9 @@ i18next.use(i18nextBrowserLanguageDetector).init(
           contacto_nombre: "Nombre",
           contacto_email: "Correo electrónico",
           contacto_mensaje: "Mensaje",
-          contacto_enviar: "Enviar"
+          contacto_enviar: "Enviar",
+          contacto_hablemos: "Hablemos",
+          footer_copyright: "© 2025 Juan Pablo Trillo — Sommelier. Todos los derechos reservados."
         }
       },
       en: {
@@ -106,10 +114,15 @@ i18next.use(i18nextBrowserLanguageDetector).init(
             contact: "Contact",
             language: "Language"
           },
+          // Hero section
+          hero_button: "Book Experience",
+          about_hero_title: "Passion for <span class=\"fst-italic text-wine\">liquid culture</span>.",
+
           // Sección "Sobre mí" en inglés
           about_title: "About Me",
           about_paragraph_1: "I'm JP Juan Pablo, a certified sommelier in California with international experience in the wine industry. I have worked in some of the most iconic wine regions of the world, including Rioja and Ribera del Duero in Spain, Tuscany and Piedmont in Italy, Bordeaux and Burgundy in France, Maipo Valley and Colchagua Valley in Chile, Mendoza in Argentina, and Napa Valley and Sonoma in the United States.",
           about_paragraph_2: "I am currently Wine & Beverage Director and Head Floor Sommelier at <strong>Tasting House</strong>, Los Gatos.",
+          about_paragraph_9: "Originally from Valdivia, Chile, he has over 15 years of experience in the wine and hospitality industry internationally. He is a Certified Sommelier through the Court of Master Sommeliers (CMS), holds the WSET Level 3 Advanced Certificate, and is a Certified Wine Judge by the American Wine Society (AWS). He is currently preparing for the CMS Advanced Exam and completing his Italian Wine Specialist Certification. He has been honored as a three-time participant in the prestigious Ruinart Challenge.",
           about_paragraph_3: "My passion is sharing wine knowledge in an accessible and enjoyable way, away from pretensions and focused on the sensory experience.",
           about_paragraph_4: "I offer consulting services, private tastings, and wine education, tailored to each client's needs.",
           about_paragraph_5: "My goal is to demystify the world of wine and help people discover new flavors and experiences.",
@@ -118,6 +131,7 @@ i18next.use(i18nextBrowserLanguageDetector).init(
           about_paragraph_8: "Wine is liquid culture, a way to travel without moving from your place.",
           
           // Sección de Servicios en inglés
+          servicios_subtitle: "Experiences",
           servicios: {
             titulo: "Services",
             catasPrivadas: {
@@ -181,7 +195,9 @@ i18next.use(i18nextBrowserLanguageDetector).init(
           contacto_nombre: "Name",
           contacto_email: "Email",
           contacto_mensaje: "Message",
-          contacto_enviar: "Send"
+          contacto_enviar: "Send",
+          contacto_hablemos: "Let's Talk",
+          footer_copyright: "© 2025 Juan Pablo Trillo — Sommelier. All rights reserved."
         }
       },
       fr: {
@@ -196,10 +212,15 @@ i18next.use(i18nextBrowserLanguageDetector).init(
             contact: "Contact",
             language: "Langue"
           },
+          // Hero section
+          hero_button: "Réserver une Expérience",
+          about_hero_title: "Passion pour la <span class=\"fst-italic text-wine\">culture liquide</span>.",
+
           // Sección "Sobre mí" en francés
           about_title: "À propos de moi",
           about_paragraph_1: "Je suis JP Juan Pablo, sommelier certifié en Californie, avec une expérience internationale dans l'industrie du vin. J'ai travaillé dans certaines des régions viticoles les plus emblématiques du monde, comme La Rioja et Ribera del Duero en Espagne, Toscane et Piémont en Italie, Bordeaux et Bourgogne en France, Vallée du Maipo et Vallée de Colchagua au Chili, Mendoza en Argentine et Napa Valley et Sonoma aux États-Unis.",
           about_paragraph_2: "Je suis actuellement Directeur des Vins et Boissons et Chef Sommelier à <strong>Tasting House</strong>, Los Gatos.",
+          about_paragraph_9: "Originaire de Valdivia, au Chili, il possède plus de 15 ans d'expérience dans l'industrie du vin et de l'hospitalité au niveau international. Il est sommelier certifié par la Court of Master Sommeliers (CMS), détient le certificat WSET Level 3 Advanced et est Wine Judge certifié par l'American Wine Society (AWS). Il se prépare actuellement à l'examen CMS Advanced et complète sa certification d'Italian Wine Specialist. Il a été honoré en tant que participant trois fois au prestigieux Ruinart Challenge.",
           about_paragraph_3: "Ma passion est de partager la connaissance du vin de manière accessible et agréable, loin des prétentions et axée sur l'expérience sensorielle.",
           about_paragraph_4: "J'offre des services de conseil, des dégustations privées et de l'éducation au vin, adaptés aux besoins de chaque client.",
           about_paragraph_5: "Mon objectif est de démystifier le monde du vin et d'aider les gens à découvrir de nouvelles saveurs et expériences.",
@@ -208,6 +229,7 @@ i18next.use(i18nextBrowserLanguageDetector).init(
           about_paragraph_8: "Le vin est une culture liquide, une façon de voyager sans bouger de sa place.",
           
           // Sección de Servicios en francés
+          servicios_subtitle: "Expériences",
           servicios: {
             titulo: "Services",
             catasPrivadas: {
@@ -271,7 +293,9 @@ i18next.use(i18nextBrowserLanguageDetector).init(
           contacto_nombre: "Nom",
           contacto_email: "Email",
           contacto_mensaje: "Message",
-          contacto_enviar: "Envoyer"
+          contacto_enviar: "Envoyer",
+          contacto_hablemos: "Parlons",
+          footer_copyright: "© 2025 Juan Pablo Trillo — Sommelier. Tous droits réservés."
         }
       }
     }

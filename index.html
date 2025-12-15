@@ -56,7 +56,7 @@
     <div class="container position-relative text-white" data-aos="fade-up" data-aos-duration="1500">
       <h1 class="display-1 fw-bold mb-3 font-serif">Juan Pablo Trillo</h1>
       <p class="lead mb-4 fs-4 fw-light text-gold-light">Sommelier | Wine Director | Educator</p>
-      <a href="#contacto" class="btn btn-gold rounded-0 px-5 py-3 text-uppercase fw-bold ls-2">Reservar Experiencia</a>
+      <a href="#contacto" class="btn btn-gold rounded-0 px-5 py-3 text-uppercase fw-bold ls-2" data-i18n="hero_button">Reservar Experiencia</a>
     </div>
     <a href="#sobre-mi" class="scroll-down-btn">
       <i class="bi bi-arrow-down-circle"></i>
@@ -74,11 +74,12 @@
           </div>
           <div class="col-lg-6" data-aos="fade-left">
             <h6 class="text-uppercase text-gold ls-2 mb-3" data-i18n="about_title">Sobre mí</h6>
-            <h2 class="display-5 font-serif mb-4 text-dark">Pasión por la <span class="fst-italic text-wine">cultura líquida</span>.</h2>
+            <h2 class="display-5 font-serif mb-4 text-dark" data-i18n="about_hero_title" data-i18n-html="true">Pasión por la <span class="fst-italic text-wine">cultura líquida</span>.</h2>
             
             <div class="text-muted fw-light">
                <p data-i18n="about_paragraph_1"></p>
                <p data-i18n="about_paragraph_2"></p>
+                    <p data-i18n="about_paragraph_9"></p>
                <p data-i18n="about_paragraph_3"></p>
             </div>
             
@@ -93,7 +94,7 @@
     <section id="servicios" class="section-padding bg-light-texture">
       <div class="container">
         <div class="text-center mb-5" data-aos="fade-up">
-           <h6 class="text-uppercase text-gold ls-2">Experiencias</h6>
+           <h6 class="text-uppercase text-gold ls-2" data-i18n="servicios_subtitle">Experiencias</h6>
            <h2 class="display-5 font-serif text-dark" data-i18n="servicios.titulo">Servicios</h2>
         </div>
 
@@ -284,7 +285,7 @@
       <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center mb-5">
-                <h6 class="text-uppercase text-gold ls-2 mb-2">Hablemos</h6>
+                <h6 class="text-uppercase text-gold ls-2 mb-2" data-i18n="contacto_hablemos">Hablemos</h6>
                 <h2 class="display-5 font-serif text-dark" data-i18n="contacto_title">Contacto</h2>
             </div>
         </div>
@@ -322,7 +323,7 @@
         <a href="#" class="text-white-50 hover-gold fs-4"><i class="bi bi-twitter-x"></i></a>
         <a href="#" class="text-white-50 hover-gold fs-4"><i class="bi bi-linkedin"></i></a>
       </div>
-      <p class="small text-white-50 mb-0">© 2025 Juan Pablo Trillo — Sommelier. Todos los derechos reservados.</p>
+      <p class="small text-white-50 mb-0" data-i18n="footer_copyright">© 2025 Juan Pablo Trillo — Sommelier. Todos los derechos reservados.</p>
     </div>
   </footer>
 
@@ -350,16 +351,17 @@
       }
     });
 
-    // Cerrar menú móvil al hacer click
-    document.addEventListener('DOMContentLoaded', function () {
-      const navbarCollapse = document.querySelector('.navbar-collapse');
-      const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
-      navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          if (navbarCollapse.classList.contains('show')) {
-            new bootstrap.Collapse(navbarCollapse).hide();
-          }
-        });
+    // Cerrar menú móvil al hacer click en cualquier enlace
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        // Cerrar el menú si está abierto
+        if (navbarCollapse.classList.contains('show')) {
+          navbarToggler.click(); // Simular click en el botón hamburguesa
+        }
       });
     });
   </script>
