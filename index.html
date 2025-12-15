@@ -20,6 +20,32 @@
 
 <body>
 
+  <!-- Age Gate -->
+  <div id="age-gate">
+    <div class="age-content" id="age-verification">
+      <div class="age-icon mb-4">
+        <i class="bi bi-wine" style="font-size: 4rem; color: #C5A059;"></i>
+      </div>
+      <h2 class="font-serif mb-3" data-i18n="age_gate_title">Verificación de Edad</h2>
+      <p class="mb-4" data-i18n="age_gate_disclaimer">Este sitio contiene información sobre bebidas alcohólicas. Debes ser mayor de 21 años para acceder.</p>
+      <h4 class="font-serif mb-4" data-i18n="age_gate_question">¿Eres mayor de 21 años?</h4>
+      <div class="d-flex gap-3 justify-content-center flex-wrap">
+        <button id="age-yes" class="btn btn-gold px-5 py-3" data-i18n="age_gate_yes">Soy mayor de 21</button>
+        <button id="age-no" class="btn btn-outline-light px-5 py-3" data-i18n="age_gate_no">No soy mayor de 21</button>
+      </div>
+    </div>
+    <div id="age-restricted" class="age-content" style="display: none;">
+      <div class="age-icon mb-4">
+        <i class="bi bi-x-circle" style="font-size: 4rem; color: #dc3545;"></i>
+      </div>
+      <h2 class="font-serif mb-3" data-i18n="age_gate_restricted_title">Acceso Restringido</h2>
+      <p class="mb-3 fs-5" data-i18n="age_gate_restricted_message">Lo sentimos, debes ser mayor de 21 años para acceder a este sitio web.</p>
+      <p class="text-white-50" data-i18n="age_gate_restricted_info">Por favor, visítanos cuando tengas la edad legal.</p>
+    </div>
+  </div>
+
+
+
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="#">JP Trillo<span class="text-gold">.</span></a>
@@ -351,22 +377,45 @@
       }
     });
 
-    // Cerrar menú móvil al hacer click en cualquier enlace
-    const navbarCollapse = document.querySelector('.navbar-collapse');
-    const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
-    const navbarToggler = document.querySelector('.navbar-toggler');
-
-    navLinks.forEach(link => {
-      link.addEventListener('click', function() {
-        // Cerrar el menú si está abierto
-        if (navbarCollapse.classList.contains('show')) {
-          navbarToggler.click(); // Simular click en el botón hamburguesa
-        }
+    // Cerrar menú móvil al hacer click
+    document.addEventListener('DOMContentLoaded', function () {
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (navbarCollapse.classList.contains('show')) {
+            new bootstrap.Collapse(navbarCollapse).hide();
+          }
+        });
       });
     });
   </script>
   
   <script src="i18n.js"></script>
+
+
+
+  <script>
+    window.addEventListener('load', function() {
+      var gate = document.getElementById('age-gate');
+      var yesBtn = document.getElementById('age-yes');
+      var noBtn = document.getElementById('age-no');
+      var verification = document.getElementById('age-verification');
+      var restricted = document.getElementById('age-restricted');
+
+      gate.style.display = 'flex';
+
+      yesBtn.addEventListener('click', function() {
+        gate.classList.add('age-verified');
+        setTimeout(function() { gate.style.display = 'none'; }, 500);
+      });
+
+      noBtn.addEventListener('click', function() {
+        verification.style.display = 'none';
+        restricted.style.display = 'block';
+      });
+    });
+  </script>
 
 </body>
 </html>

@@ -99,7 +99,15 @@ i18next.use(i18nextBrowserLanguageDetector).init(
           contacto_mensaje: "Mensaje",
           contacto_enviar: "Enviar",
           contacto_hablemos: "Hablemos",
-          footer_copyright: "© 2025 Juan Pablo Trillo — Sommelier. Todos los derechos reservados."
+          footer_copyright: "© 2025 Juan Pablo Trillo — Sommelier. Todos los derechos reservados.",
+          age_gate_title: "Verificación de Edad",
+          age_gate_question: "¿Eres mayor de 21 años?",
+          age_gate_disclaimer: "Este sitio web contiene información sobre bebidas alcohólicas. Debes ser mayor de 21 años para acceder.",
+          age_gate_yes: "Soy mayor de 21",
+          age_gate_no: "No soy mayor de 21",
+          age_gate_restricted_title: "Acceso Restringido",
+          age_gate_restricted_message: "Lo sentimos, debes ser mayor de 21 años para acceder a este sitio web.",
+          age_gate_restricted_info: "Por favor, visítanos cuando tengas la edad legal para consumir bebidas alcohólicas."
         }
       },
       en: {
@@ -197,7 +205,15 @@ i18next.use(i18nextBrowserLanguageDetector).init(
           contacto_mensaje: "Message",
           contacto_enviar: "Send",
           contacto_hablemos: "Let's Talk",
-          footer_copyright: "© 2025 Juan Pablo Trillo — Sommelier. All rights reserved."
+          footer_copyright: "© 2025 Juan Pablo Trillo — Sommelier. All rights reserved.",
+          age_gate_title: "Age Verification",
+          age_gate_question: "Are you 21 years or older?",
+          age_gate_disclaimer: "This website contains information about alcoholic beverages. You must be 21 years or older to access.",
+          age_gate_yes: "I am 21 or older",
+          age_gate_no: "I am under 21",
+          age_gate_restricted_title: "Access Restricted",
+          age_gate_restricted_message: "Sorry, you must be 21 years or older to access this website.",
+          age_gate_restricted_info: "Please visit us when you reach the legal drinking age."
         }
       },
       fr: {
@@ -295,7 +311,15 @@ i18next.use(i18nextBrowserLanguageDetector).init(
           contacto_mensaje: "Message",
           contacto_enviar: "Envoyer",
           contacto_hablemos: "Parlons",
-          footer_copyright: "© 2025 Juan Pablo Trillo — Sommelier. Tous droits réservés."
+          footer_copyright: "© 2025 Juan Pablo Trillo — Sommelier. Tous droits réservés.",
+          age_gate_title: "Vérification d'Âge",
+          age_gate_question: "Avez-vous 21 ans ou plus?",
+          age_gate_disclaimer: "Ce site contient des informations sur les boissons alcoolisées. Vous devez avoir 21 ans ou plus pour y accéder.",
+          age_gate_yes: "J'ai 21 ans ou plus",
+          age_gate_no: "J'ai moins de 21 ans",
+          age_gate_restricted_title: "Accès Restreint",
+          age_gate_restricted_message: "Désolé, vous devez avoir 21 ans ou plus pour accéder à ce site.",
+          age_gate_restricted_info: "Veuillez nous rendre visite lorsque vous aurez atteint l'âge légal pour consommer de l'alcool."
         }
       }
     }
