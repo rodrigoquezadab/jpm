@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog & Recomendaciones | Juan Pablo Trillo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Reuse Age Gate Styles/Scripts if needed, but let's assume session persists or add simple checks -->
+</head>
+
+<body class="bg-light-texture">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">JP Trillo<span class="text-gold">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html#sobre-mi" data-i18n="navbar.about">Sobre
+                            mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#servicios"
+                            data-i18n="navbar.services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#" data-i18n="navbar.blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#galeria"
+                            data-i18n="navbar.gallery">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#testimonios"
+                            data-i18n="navbar.testimonials">Testimonios</a></li>
+                    <li class="nav-item me-3"><a class="nav-link" href="index.html#contacto"
+                            data-i18n="navbar.contact">Contacto</a></li>
+
+                    <div class="dropdown">
+                        <button class="btn btn-outline-light btn-sm dropdown-toggle rounded-pill px-3" type="button"
+                            id="dropdownLanguage" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-i18n="navbar.language">
+                            Idioma
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="dropdownLanguage">
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('es')">Español</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('fr')">Français</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 mt-5 bg-wine text-white text-center">
+        <div class="container py-5" data-aos="fade-up">
+            <h1 class="display-3 font-serif fw-bold" data-i18n="blog.page_title">Blog & Recomendaciones</h1>
+            <p class="lead text-white-50" data-i18n="blog.page_subtitle">Explorando el mundo del vino, una copa a la
+                vez.</p>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-hover border-0 shadow h-100 cursor-pointer" data-bs-toggle="modal"
+                        data-bs-target="#blogModal1">
+                        <div class="card-img-wrapper overflow-hidden">
+                            <img src="./assets/maridaje-vinos-chilenos.jpg" class="card-img-top" alt="Maridaje" />
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-gold mb-2 rounded-0">Tips</span>
+                            <h5 class="card-title font-serif fw-bold" data-i18n="blog.card1.title">Maridaje perfecto
+                            </h5>
+                            <p class="card-text text-muted" data-i18n="blog.card1.text"></p>
+                            <a href="#" class="text-wine text-decoration-none fw-bold mt-2 d-inline-block">Leer más <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card card-hover border-0 shadow h-100 cursor-pointer" data-bs-toggle="modal"
+                        data-bs-target="#blogModal2">
+                        <div class="card-img-wrapper overflow-hidden">
+                            <img src="./assets/region-de-alsacia-scaled-1.jpg" class="card-img-top" alt="Alsacia" />
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-wine mb-2 rounded-0">Viajes</span>
+                            <h5 class="card-title font-serif fw-bold" data-i18n="blog.card2.title">Regiones vinícolas
+                            </h5>
+                            <p class="card-text text-muted" data-i18n="blog.card2.text"></p>
+                            <a href="#" class="text-wine text-decoration-none fw-bold mt-2 d-inline-block">Leer más <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card card-hover border-0 shadow h-100 cursor-pointer" data-bs-toggle="modal"
+                        data-bs-target="#blogModal3">
+                        <div class="card-img-wrapper overflow-hidden">
+                            <img src="./assets/cata-vino.jpg" class="card-img-top" alt="Cata" />
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-gold mb-2 rounded-0">Educación</span>
+                            <h5 class="card-title font-serif fw-bold" data-i18n="blog.card3.title">Consejos de cata</h5>
+                            <p class="card-text text-muted" data-i18n="blog.card3.text"></p>
+                            <a href="#" class="text-wine text-decoration-none fw-bold mt-2 d-inline-block">Leer más <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-hover border-0 shadow h-100 cursor-pointer" data-bs-toggle="modal"
+                        data-bs-target="#blogModal4">
+                        <div class="card-img-wrapper overflow-hidden">
+                            <img src="./assets/wine_decanting.png" class="card-img-top" alt="Decantación" />
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-gold mb-2 rounded-0">Servicio</span>
+                            <h5 class="card-title font-serif fw-bold" data-i18n="blog.card4.title">El Arte de Decantar
+                            </h5>
+                            <p class="card-text text-muted" data-i18n="blog.card4.text"></p>
+                            <a href="#" class="text-wine text-decoration-none fw-bold mt-2 d-inline-block">Leer más <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card card-hover border-0 shadow h-100 cursor-pointer" data-bs-toggle="modal"
+                        data-bs-target="#blogModal5">
+                        <div class="card-img-wrapper overflow-hidden">
+                            <img src="./assets/sparkling_wine.png" class="card-img-top" alt="Espumosos" />
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-gold mb-2 rounded-0">Estilos</span>
+                            <h5 class="card-title font-serif fw-bold" data-i18n="blog.card5.title">Mundo de Espumosos
+                            </h5>
+                            <p class="card-text text-muted" data-i18n="blog.card5.text"></p>
+                            <a href="#" class="text-wine text-decoration-none fw-bold mt-2 d-inline-block">Leer más <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card card-hover border-0 shadow h-100 cursor-pointer" data-bs-toggle="modal"
+                        data-bs-target="#blogModal6">
+                        <div class="card-img-wrapper overflow-hidden">
+                            <img src="./assets/team.jpeg" class="card-img-top" alt="Servicio" />
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-wine mb-2 rounded-0">Hospitalidad</span>
+                            <h5 class="card-title font-serif fw-bold" data-i18n="blog.card6.title">Excelencia en
+                                Servicio</h5>
+                            <p class="card-text text-muted" data-i18n="blog.card6.text"></p>
+                            <a href="#" class="text-wine text-decoration-none fw-bold mt-2 d-inline-block">Leer más <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-hover border-0 shadow h-100 cursor-pointer" data-bs-toggle="modal"
+                        data-bs-target="#blogModal7">
+                        <div class="card-img-wrapper overflow-hidden">
+                            <img src="./assets/maridaje-vinos-chilenos.jpg" class="card-img-top" alt="Vino y Salud"
+                                style="filter: hue-rotate(45deg);" />
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-gold mb-2 rounded-0">Salud</span>
+                            <h5 class="card-title font-serif fw-bold" data-i18n="blog.card7.title">Vino y Bienestar</h5>
+                            <p class="card-text text-muted" data-i18n="blog.card7.text"></p>
+                            <a href="#" class="text-wine text-decoration-none fw-bold mt-2 d-inline-block">Leer más <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card card-hover border-0 shadow h-100 cursor-pointer" data-bs-toggle="modal"
+                        data-bs-target="#blogModal8">
+                        <div class="card-img-wrapper overflow-hidden">
+                            <img src="./assets/jptm.jpeg" class="card-img-top" alt="Coleccionismo"
+                                style="filter: sepia(0.3);" />
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-wine mb-2 rounded-0">Coleccionismo</span>
+                            <h5 class="card-title font-serif fw-bold" data-i18n="blog.card8.title">Iniciando tu Cava
+                            </h5>
+                            <p class="card-text text-muted" data-i18n="blog.card8.text"></p>
+                            <a href="#" class="text-wine text-decoration-none fw-bold mt-2 d-inline-block">Leer más <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card card-hover border-0 shadow h-100 cursor-pointer" data-bs-toggle="modal"
+                        data-bs-target="#blogModal9">
+                        <div class="card-img-wrapper overflow-hidden">
+                            <img src="./assets/wine_decanting.png" class="card-img-top" alt="Temperatura"
+                                style="transform: scaleX(-1);" />
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-gold mb-2 rounded-0">Tips</span>
+                            <h5 class="card-title font-serif fw-bold" data-i18n="blog.card9.title">Temperatura Ideal
+                            </h5>
+                            <p class="card-text text-muted" data-i18n="blog.card9.text"></p>
+                            <a href="#" class="text-wine text-decoration-none fw-bold mt-2 d-inline-block">Leer más <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-5 border-top border-gold border-3">
+        <div class="container text-center">
+            <h3 class="font-serif mb-4">Juan Pablo Trillo</h3>
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <a href="#" class="text-white-50 hover-gold fs-4"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white-50 hover-gold fs-4"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white-50 hover-gold fs-4"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-white-50 hover-gold fs-4"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <p class="small text-white-50 mb-0" data-i18n="footer_copyright">© 2026 Juan Pablo Trillo — Sommelier. Todos
+                los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="blogModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-0">
+                <div class="modal-header border-bottom border-wine border-3 bg-light">
+                    <h5 class="modal-title font-serif fw-bold text-dark" data-i18n="blog.card1.title"></h5><button
+                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5"><img src="./assets/maridaje-vinos-chilenos.jpg"
+                        class="img-fluid w-100 mb-4 shadow rounded-1" alt="Maridaje">
+                    <div class="fs-5 fw-light text-muted" data-i18n="blog.card1.full_content" data-i18n-html="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="blogModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-0">
+                <div class="modal-header border-bottom border-wine border-3 bg-light">
+                    <h5 class="modal-title font-serif fw-bold text-dark" data-i18n="blog.card2.title"></h5><button
+                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5"><img src="./assets/region-de-alsacia-scaled-1.jpg"
+                        class="img-fluid w-100 mb-4 shadow rounded-1" alt="Alsacia">
+                    <div class="fs-5 fw-light text-muted" data-i18n="blog.card2.full_content" data-i18n-html="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="blogModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-0">
+                <div class="modal-header border-bottom border-wine border-3 bg-light">
+                    <h5 class="modal-title font-serif fw-bold text-dark" data-i18n="blog.card3.title"></h5><button
+                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5"><img src="./assets/cata-vino.jpg"
+                        class="img-fluid w-100 mb-4 shadow rounded-1" alt="Cata">
+                    <div class="fs-5 fw-light text-muted" data-i18n="blog.card3.full_content" data-i18n-html="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="blogModal4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-0">
+                <div class="modal-header border-bottom border-wine border-3 bg-light">
+                    <h5 class="modal-title font-serif fw-bold text-dark" data-i18n="blog.card4.title"></h5><button
+                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5"><img src="./assets/wine_decanting.png"
+                        class="img-fluid w-100 mb-4 shadow rounded-1" alt="Decantación">
+                    <div class="fs-5 fw-light text-muted" data-i18n="blog.card4.full_content" data-i18n-html="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="blogModal5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-0">
+                <div class="modal-header border-bottom border-wine border-3 bg-light">
+                    <h5 class="modal-title font-serif fw-bold text-dark" data-i18n="blog.card5.title"></h5><button
+                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5"><img src="./assets/sparkling_wine.png"
+                        class="img-fluid w-100 mb-4 shadow rounded-1" alt="Espumosos">
+                    <div class="fs-5 fw-light text-muted" data-i18n="blog.card5.full_content" data-i18n-html="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="blogModal6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-0">
+                <div class="modal-header border-bottom border-wine border-3 bg-light">
+                    <h5 class="modal-title font-serif fw-bold text-dark" data-i18n="blog.card6.title"></h5><button
+                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5"><img src="./assets/team.jpeg" class="img-fluid w-100 mb-4 shadow rounded-1"
+                        alt="Hospitalidad">
+                    <div class="fs-5 fw-light text-muted" data-i18n="blog.card6.full_content" data-i18n-html="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7 -->
+    <div class="modal fade" id="blogModal7" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-0">
+                <div class="modal-header border-bottom border-wine border-3 bg-light">
+                    <h5 class="modal-title font-serif fw-bold text-dark" data-i18n="blog.card7.title"></h5><button
+                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5"><img src="./assets/maridaje-vinos-chilenos.jpg"
+                        class="img-fluid w-100 mb-4 shadow rounded-1" alt="Salud" style="filter: hue-rotate(45deg);">
+                    <div class="fs-5 fw-light text-muted" data-i18n="blog.card7.full_content" data-i18n-html="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8 -->
+    <div class="modal fade" id="blogModal8" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-0">
+                <div class="modal-header border-bottom border-wine border-3 bg-light">
+                    <h5 class="modal-title font-serif fw-bold text-dark" data-i18n="blog.card8.title"></h5><button
+                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5"><img src="./assets/jptm.jpeg" class="img-fluid w-100 mb-4 shadow rounded-1"
+                        alt="Cava" style="filter: sepia(0.3);">
+                    <div class="fs-5 fw-light text-muted" data-i18n="blog.card8.full_content" data-i18n-html="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 9 -->
+    <div class="modal fade" id="blogModal9" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-0">
+                <div class="modal-header border-bottom border-wine border-3 bg-light">
+                    <h5 class="modal-title font-serif fw-bold text-dark" data-i18n="blog.card9.title"></h5><button
+                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5"><img src="./assets/wine_decanting.png"
+                        class="img-fluid w-100 mb-4 shadow rounded-1" alt="Temperatura" style="transform: scaleX(-1);">
+                    <div class="fs-5 fw-light text-muted" data-i18n="blog.card9.full_content" data-i18n-html="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.5/i18next.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+
+    <script>
+        AOS.init({
+            once: true,
+            duration: 800,
+            easing: 'ease-out-cubic',
+        });
+    </script>
+
+    <script src="i18n.js"></script>
+</body>
+
+</html>
