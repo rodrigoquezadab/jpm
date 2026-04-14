@@ -27,8 +27,8 @@ i18next.use(i18nextBrowserLanguageDetector).init(
             },
             card2: {
               title: "Regiones vinícolas",
-              text: "Explora las mejores zonas productoras de vino del mundo.",
-              full_content: "<p>El mundo del vino es vasto, pero cada región tiene su firma única:</p><ul><li><strong>Burdeos, Francia:</strong> La cuna de las mezclas de Cabernet Sauvignon y Merlot. Busca elegancia, estructura y capacidad de guarda.</li><li><strong>Toscana, Italia:</strong> Hogar del Chianti y los 'Super Toscanos'. Vinos con base de Sangiovese, conocidos por su acidez vibrante y notas de cereza y hierbas secas.</li><li><strong>Valle de Napa, EE.UU.:</strong> Famoso por sus Cabernet Sauvignon potentes y opulentos, y Chardonnay con crianza en roble.</li><li><strong>Mendoza, Argentina:</strong> La capital mundial del Malbec. Vinos tintos intensos, frutales y aterciopelados, perfectos para carnes asadas.</li><li><strong>Valle de Colchagua, Chile:</strong> Reconocido por sus Carmenère distintivos y tintos con gran relación calidad-precio.</li></ul><p>Viajar a través de la copa es la forma más accesible de conocer el mundo.</p>"
+              text: "Explora las zonas productoras más icónicas, con especial énfasis en el terroir chileno.",
+              full_content: "<p>El mundo del vino es vasto, pero ciertas regiones destacan por su historia y calidad excepcional:</p><ul><li><strong>Chile (Maipo, Colchagua y Casablanca):</strong> Desde los Cabernet Sauvignon especiados del Maipo hasta el Carmenère profundo de Colchagua y los blancos frescos de Casablanca, Chile ofrece una diversidad única entre montaña y mar.</li><li><strong>Burdeos, Francia:</strong> Referencia mundial para mezclas de Cabernet Sauvignon y Merlot, con elegancia y gran potencial de guarda.</li><li><strong>Toscana, Italia:</strong> Famosa por la Sangiovese, produciendo desde el clásico Chianti hasta los prestigiosos Super Toscanos.</li><li><strong>Valle de Napa, EE.UU.:</strong> Epicentro de los tintos potentes y opulentos en el Nuevo Mundo.</li><li><strong>Mendoza, Argentina:</strong> Líder indiscutido en Malbec de altura, con gran intensidad y color.</li></ul><p>Viajar a través de la copa es la forma más accesible de conocer el mundo.</p>"
             },
             card3: {
               title: "Consejos de cata",
@@ -81,25 +81,29 @@ i18next.use(i18nextBrowserLanguageDetector).init(
           servicios_subtitle: "Experiencias",
           servicios: {
             titulo: "Servicios",
+            viajes: {
+              titulo: "Viajes",
+              descripcion: "Experiencias de enoturismo diseñadas para individuos, grupos o empresas en las regiones más prestigiosas del mundo. Creamos itinerarios personalizados en Chile, EE.UU. y Europa, enfocados en descubrir el terroir y la cultura local a través de visitas exclusivas y catas de alto nivel."
+            },
             catasPrivadas: {
               titulo: "Catas privadas",
-              descripcion: "Disfruta de una experiencia única con catas privadas en tu hogar, empresa o evento especial. Selecciono personalmente los vinos y creo maridajes personalizados para que explores el mundo del vino de forma sensorial y entretenida.<br /><strong>Ejemplo:</strong> Cata temática de vinos italianos con maridaje de quesos y charcutería artesanal para un grupo de 10 personas."
+              descripcion: "Sesiones sensoriales a medida para eventos privados o actividades corporativas de integración. Selecciono vinos exclusivos y diseñamos dinámicas de grupo que se ajustan a tus intereses, garantizando una experiencia educativa y entretenida en el entorno que elijas."
             },
             consultoria: {
               titulo: "Consultoría a restaurantes, hoteles y bares",
-              descripcion: "Asesoro establecimientos gastronómicos para optimizar sus cartas de vino, crear experiencias memorables para los clientes y capacitar al equipo en servicio de bebidas.<br /><strong>Ejemplo:</strong> Rediseño completo de la carta de vinos de un restaurante mediterráneo con énfasis en vinos locales y sostenibles."
+              descripcion: "Asesoría estratégica dirigida tanto a coleccionistas privados como a empresas del sector hospitalidad (hoteles, restaurantes y bares). Optimizamos la selección de vinos y diseñamos cartas o colecciones que reflejen identidad, calidad y rentabilidad."
             },
             entrenamiento: {
               titulo: "Entrenamiento para equipos",
-              descripcion: "Capacito al personal de servicio en técnicas de atención, lenguaje del vino y maridaje para mejorar la experiencia del cliente. Adaptado a todos los niveles de conocimiento.<br /><strong>Ejemplo:</strong> Programa de 4 sesiones para staff de sala y baristas sobre servicio de vino por copa, decantación y recomendaciones de maridaje."
+              descripcion: "Capacitación técnica y de servicio para equipos de empresas o grupos de entusiastas que buscan profesionalizar su conocimiento. Cubrimos desde técnicas de servicio y protocolo hasta maridaje, adaptando el nivel y profundidad a las necesidades específicas del cliente."
             },
             cavas: {
               titulo: "Mantenimiento de cavas privadas",
-              descripcion: "Ofrezco gestión profesional de colecciones de vino: organización, inventario, rotación y asesoría en nuevas adquisiciones. Ideal para coleccionistas y amantes del vino.<br /><strong>Ejemplo:</strong> Organización y digitalización del inventario de una cava privada con más de 200 etiquetas premium."
+              descripcion: "Gestión integral de colecciones para particulares y empresas, asegurando la conservación óptima y organización de sus vinos. Ofrecemos servicios de inventario digital, rotación estratégica de botellas y asesoría experta en nuevas adquisiciones para potenciar su inversión."
             },
             educacion: {
               titulo: "Educación y talleres para aficionados",
-              descripcion: "Talleres diseñados para entusiastas del vino que desean aprender sobre cata, regiones vinícolas, estilos y conservación de vinos. Accesibles, prácticos y entretenidos.<br /><strong>Ejemplo:</strong> Curso introductorio de 3 días sobre vinos del Nuevo Mundo para principiantes, con degustaciones guiadas."
+              descripcion: "Talleres formativos para individuos o grupos que desean profundizar en la cultura del vino desde una perspectiva práctica. Exploramos regiones, estilos y técnicas de cata de forma accesible, ideal tanto para momentos sociales como para programas de desarrollo profesional."
             }
           },
 
@@ -164,8 +168,8 @@ i18next.use(i18nextBrowserLanguageDetector).init(
             },
             card2: {
               title: "Wine Regions",
-              text: "Explore the best wine-producing areas in the world.",
-              full_content: "<p>The world of wine is vast, but each region has its unique signature:</p><ul><li><strong>Bordeaux, France:</strong> The cradle of Cabernet Sauvignon and Merlot blends. Look for elegance, structure, and aging potential.</li><li><strong>Tuscany, Italy:</strong> Home of Chianti and 'Super Tuscans.' Sangiovese-based wines, known for their vibrant acidity and notes of cherry and dried herbs.</li><li><strong>Napa Valley, USA:</strong> Famous for its powerful and opulent Cabernet Sauvignons, and oak-aged Chardonnays.</li><li><strong>Mendoza, Argentina:</strong> The world capital of Malbec. Intense, fruity, and velvety red wines, perfect for grilled meats.</li><li><strong>Colchagua Valley, Chile:</strong> Renowned for its distinctive Carmenère and reds with great value for money.</li></ul><p>Traveling through the glass is the most accessible way to see the world.</p>"
+              text: "Explore iconic wine-producing areas, with a special focus on Chilean terroir.",
+              full_content: "<p>The wine world is vast, but certain regions stand out for their history and exceptional quality:</p><ul><li><strong>Chile (Maipo, Colchagua, and Casablanca):</strong> From the spicy Cabernet Sauvignons of Maipo to the deep Carmenère of Colchagua and the fresh whites of Casablanca, Chile offers unique diversity between the mountains and the sea.</li><li><strong>Bordeaux, France:</strong> Global reference for Cabernet Sauvignon and Merlot blends, known for elegance and great aging potential.</li><li><strong>Tuscany, Italy:</strong> Famous for Sangiovese, producing everything from classic Chianti to prestigious Super Tuscans.</li><li><strong>Napa Valley, USA:</strong> The epicenter of powerful and opulent reds in the New World.</li><li><strong>Mendoza, Argentina:</strong> Undisputed leader in high-altitude Malbec, with great intensity and color.</li></ul><p>Traveling through the glass is the most accessible way to see the world.</p>"
             },
             card3: {
               title: "Tasting Tips",
@@ -218,25 +222,29 @@ i18next.use(i18nextBrowserLanguageDetector).init(
           servicios_subtitle: "Experiences",
           servicios: {
             titulo: "Services",
+            viajes: {
+              titulo: "Travel",
+              descripcion: "Wine tourism experiences designed for individuals, groups, or companies in the world's most prestigious regions. We create personalized itineraries in Chile, the USA, and Europe, focused on discovering local terroir and culture through exclusive visits and high-level tastings."
+            },
             catasPrivadas: {
               titulo: "Private Tastings",
-              descripcion: "Enjoy a unique experience with private tastings at your home, business, or special event. I personally select the wines and create custom pairings so you can explore the world of wine in a sensory and entertaining way.<br /><strong>Example:</strong> Themed Italian wine tasting with artisanal cheese and charcuterie pairing for a group of 10."
+              descripcion: "Bespoke sensory sessions designed for private events or corporate team-building activities. I personally select exclusive wines and design group dynamics tailored to your interests, ensuring an educational and entertaining experience in your chosen setting."
             },
             consultoria: {
               titulo: "Consulting for Restaurants, Hotels, and Bars",
-              descripcion: "I advise hospitality establishments on optimizing wine lists, creating memorable guest experiences, and training staff in beverage service.<br /><strong>Example:</strong> Complete redesign of a Mediterranean restaurant's wine list focusing on local and sustainable wines."
+              descripcion: "Strategic advice for both private collectors and hospitality businesses (hotels, restaurants, and bars). We optimize wine selections and design wine lists or collections that reflect identity, quality, and profitability."
             },
             entrenamiento: {
               titulo: "Team Training",
-              descripcion: "I train service staff in guest service techniques, wine terminology, and pairing strategies to enhance the customer experience. Suitable for all knowledge levels.<br /><strong>Example:</strong> Four-session program for floor staff and baristas on by-the-glass service, decanting, and pairing recommendations."
+              descripcion: "Technical and service training for corporate teams or groups of enthusiasts seeking to professionalize their knowledge. We cover service techniques, protocol, and pairing, adapting the depth to the client's specific needs."
             },
             cavas: {
               titulo: "Private Cellar Maintenance",
-              descripcion: "Professional management of wine collections: organization, inventory, rotation, and advice on new acquisitions. Ideal for collectors and wine lovers.<br /><strong>Example:</strong> Organization and digitization of a private cellar inventory with over 200 premium labels."
+              descripcion: "Comprehensive collection management for individuals and companies, ensuring optimal conservation and organization of their wines. We offer digital inventory services, strategic bottle rotation, and expert advice on new acquisitions to enhance your investment."
             },
             educacion: {
               titulo: "Education and Workshops for Enthusiasts",
-              descripcion: "Workshops designed for wine lovers who want to learn about tasting, wine regions, styles, and storage. Accessible, practical, and fun.<br /><strong>Example:</strong> 3-day introductory course on New World wines for beginners, including guided tastings."
+              descripcion: "Educational workshops for individuals or groups looking to deepen their wine culture from a practical perspective. We explore regions, styles, and tasting techniques in an accessible way, ideal for both social gatherings and professional development programs."
             }
           },
 
@@ -301,8 +309,8 @@ i18next.use(i18nextBrowserLanguageDetector).init(
             },
             card2: {
               title: "Régions viticoles",
-              text: "Explorez les meilleures zones productrices de vin au monde.",
-              full_content: "<p>Le monde du vin est vaste, mais chaque région a sa signature unique :</p><ul><li><strong>Bordeaux, France :</strong> Le berceau des assemblages Cabernet Sauvignon et Merlot. Recherchez l'élégance, la structure et le potentiel de garde.</li><li><strong>Toscane, Italie :</strong> Foyer du Chianti et des 'Super Toscans'. Vins à base de Sangiovese, connus pour leur acidité vibrante et leurs notes de cerise et d'herbes séchées.</li><li><strong>Napa Valley, USA :</strong> Célèbre pour ses Cabernet Sauvignons puissants et opulents, et ses Chardonnays élevés en chêne.</li><li><strong>Mendoza, Argentine :</strong> La capitale mondiale du Malbec. Vins rouges intenses, fruités et veloutés, parfaits pour les viandes grillées.</li><li><strong>Vallée de Colchagua, Chili :</strong> Reconnue pour ses Carmenère distinctifs et ses rouges offrant un excellent rapport qualité-prix.</li></ul><p>Voyager à travers le verre est la façon la plus accessible de voir le monde.</p>"
+              text: "Explorez les zones productrices les plus emblématiques, avec un accent particulier sur le terroir chilien.",
+              full_content: "<p>Le monde du vin est vaste, mais certaines régions se distinguent par leur histoire et leur qualité exceptionnelle :</p><ul><li><strong>Chili (Maipo, Colchagua et Casablanca) :</strong> Des Cabernet Sauvignon épicés de Maipo au Carmenère profond de Colchagua et aux blancs frais de Casablanca, le Chili offre une diversité unique entre montagne et mer.</li><li><strong>Bordeaux, France :</strong> Référence mondiale pour les assemblages Cabernet Sauvignon et Merlot, connus pour leur élégance et leur grand potentiel de garde.</li><li><strong>Toscane, Italie :</strong> Célèbre pour le Sangiovese, produisant tout, du Chianti classique aux prestigieux Super Toscans.</li><li><strong>Napa Valley, USA :</strong> L'épicentre des rouges puissants et opulents du Nouveau Monde.</li><li><strong>Mendoza, Argentine :</strong> Leader incontesté du Malbec d'altitude, avec une grande intensité et couleur.</li></ul><p>Voyager à travers le verre est la façon la plus accessible de voir le monde.</p>"
             },
             card3: {
               title: "Conseils de dégustation",
@@ -355,25 +363,29 @@ i18next.use(i18nextBrowserLanguageDetector).init(
           servicios_subtitle: "Expériences",
           servicios: {
             titulo: "Services",
+            viajes: {
+              titulo: "Voyages",
+              descripcion: "Expériences d'œnotourisme conçues pour les particuliers, les groupes ou les entreprises dans les régions les plus prestigieuses du monde. Nous créons des itinéraires personnalisés au Chili, aux États-Unis et en Europe, axés sur la découverte du terroir et de la culture locale."
+            },
             catasPrivadas: {
               titulo: "Dégustations privées",
-              descripcion: "Profitez d'une expérience unique avec des dégustations privées à domicile, en entreprise ou lors d'un événement spécial. Je sélectionne personnellement les vins et crée des accords mets-vins personnalisés pour explorer le monde du vin de manière sensorielle et divertissante.<br /><strong>Exemple :</strong> Dégustation à thème de vins italiens avec fromages et charcuteries artisanales pour un groupe de 10 personnes."
+              descripcion: "Sessions sensorielles sur mesure pour événements privés ou activités de team-building en entreprise. Je sélectionne des vins exclusifs et conçois des dynamiques de groupe adaptées à vos intérêts, garantissant une expérience éducative et divertissante dans le cadre de votre choix."
             },
             consultoria: {
               titulo: "Conseil pour restaurants, hôtels et bars",
-              descripcion: "Je conseille les établissements gastronomiques pour optimiser leurs cartes des vins, créer des expériences mémorables pour les clients et former le personnel au service des boissons.<br /><strong>Exemple :</strong> Refonte complète de la carte des vins d'un restaurant méditerranéen mettant l'accent sur les vins locaux et durables."
+              descripcion: "Conseil stratégique pour collectionneurs privés et entreprises du secteur de l'hôtellerie (hôtels, restaurants et bars). Nous optimisons la sélection des vins et concevons des cartes ou collections reflétant l'identité, la qualité et la rentabilité."
             },
             entrenamiento: {
               titulo: "Formation pour les équipes",
-              descripcion: "Je forme le personnel de service aux techniques d'accueil, au langage du vin et aux accords mets-vins pour améliorer l'expérience client. Adapté à tous les niveaux de connaissance.<br /><strong>Exemple :</strong> Programme de 4 sessions pour le personnel de salle et les baristas sur le service au verre, la décantation et les recommandations d'accords."
+              descripcion: "Formation technique et de service pour les équipes d'entreprises ou les groupes d'amateurs souhaitant professionnaliser leurs connaissances. Nous couvrons les techniques de service, le protocole et les accords mets-vins, en adaptant le niveau à vos besoins."
             },
             cavas: {
               titulo: "Gestion de caves privées",
-              descripcion: "Gestion professionnelle des collections de vin : organisation, inventaire, rotation et conseils sur les nouvelles acquisitions. Idéal pour les collectionneurs et les amateurs de vin.<br /><strong>Exemple :</strong> Organisation et numérisation de l'inventaire d'une cave privée comptant plus de 200 étiquettes haut de gamme."
+              descripcion: "Gestion intégrale de collections pour particuliers et entreprises, assurant une conservation et une organisation optimales. Nous proposons l'inventaire numérique, la rotation stratégique et le conseil expert sur les nouvelles acquisitions pour valoriser votre investissement."
             },
             educacion: {
               titulo: "Éducation et ateliers pour amateurs",
-              descripcion: "Ateliers conçus pour les passionnés de vin souhaitant apprendre la dégustation, les régions viticoles, les styles et la conservation. Accessibles, pratiques et ludiques.<br /><strong>Exemple :</strong> Cours d'introduction de 3 jours sur les vins du Nouveau Monde pour débutants, avec dégustations guidées."
+              descripcion: "Ateliers pour particuliers ou groupes souhaitant approfondir leur culture du vin. Nous explorons les régions, les styles et les techniques de dégustation de manière accessible, idéal pour les moments sociaux comme pour les programmes de développement professionnel."
             }
           },
 
