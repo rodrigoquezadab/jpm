@@ -116,16 +116,16 @@ i18next.use(i18nextBrowserLanguageDetector).init(
           testimonios_title: "Testimonios",
           testimonios: {
             testimonio1: {
-              texto: "La pasión de Juan Pablo hizo que nuestra cata fuera inolvidable.",
-              autor: "María R., San Francisco"
+              texto: "La experiencia y hospitalidad de JP son de clase mundial. Tiene un dominio impresionante de los maridajes y una habilidad natural para hacer que los invitados se sientan valorados. Cada recomendación fue acertada, y su dedicación para brindar una experiencia superior fue evidente durante toda la velada.",
+              autor: "Nora Thomas"
             },
             testimonio2: {
-              texto: "Profesionalismo y carisma. ¡Una noche memorable!",
-              autor: "Alejandro M., Los Ángeles"
+              texto: "JP posee un talento poco común para contar historias. Su profundo conocimiento de los vinos y la gastronomía regional nos permitió viajar virtualmente por el mundo desde nuestra mesa. Al compartir la rica historia y los matices detrás de cada selección, transformó una simple cena en un viaje culinario global. Su experiencia realmente lleva el mundo a tu copa.",
+              autor: "Maurice Dorlhiac"
             },
             testimonio3: {
-              texto: "Una experiencia única. Aprendimos y disfrutamos muchísimo.",
-              autor: "Carla D., Napa Valley"
+              texto: "Un verdadero sommelier de corazón, JP combina un profundo conocimiento con una pasión genuina. Cálido y accesible, hace que cada invitado se sienta a gusto mientras los guía a través de cada copa, convirtiendo el vino en una experiencia personal, memorable y atractiva. Relajado y apasionado, JP es el tipo de sommelier que hace que el vino parezca no requerir esfuerzo. Con un enfoque amigable y sincero y un entusiasmo genuino, convierte cada copa en una experiencia divertida y memorable. Apasionado por el vino, comparte su experiencia de una manera que se siente fácil y acogedora.",
+              autor: "Cindy Schneider"
             }
           },
           contacto_title: "Contacto",
@@ -257,16 +257,16 @@ i18next.use(i18nextBrowserLanguageDetector).init(
           testimonios_title: "Testimonials",
           testimonios: {
             testimonio1: {
-              texto: "Juan Pablo's passion made our tasting unforgettable.",
-              autor: "María R., San Francisco"
+              texto: "JP’s expertise and hospitality are world-class. He has an impressive command of wine pairings and a natural ability to make guests feel valued. Every recommendation was spot on, and his dedication to providing a superior experience was evident throughout our evening.",
+              autor: "Nora Thomas"
             },
             testimonio2: {
-              texto: "Professionalism and charisma. A memorable night!",
-              autor: "Alejandro M., Los Angeles"
+              texto: "JP possesses a rare talent for storytelling. His deep understanding of regional wine and cuisine allowed us to virtually travel the world from our table. By sharing the rich history and nuances behind each selection, he transformed a simple dinner into a global culinary journey. His expertise truly brings the world to your glass.",
+              autor: "Maurice Dorlhiac"
             },
             testimonio3: {
-              texto: "A unique experience. We learned and enjoyed a lot.",
-              autor: "Carla D., Napa Valley"
+              texto: "A true sommelier at heart, JP pairs deep knowledge with genuine passion. Warm and approachable, he makes every guest feel at ease while guiding them through each glass, turning wine into a personal, memorable, and engaging experience. Easygoing and passionate, JP is the kind of sommelier who makes wine feel effortless. With a friendly, sincere approach and genuine enthusiasm, he turns every pour into a fun and memorable experience. Passionate about wine, he shares his expertise in a way that feels easy and inviting.",
+              autor: "Cindy Schneider"
             }
           },
           contacto_title: "Contact",
@@ -398,16 +398,16 @@ i18next.use(i18nextBrowserLanguageDetector).init(
           testimonios_title: "Témoignages",
           testimonios: {
             testimonio1: {
-              texto: "La passion de Juan Pablo a rendu notre dégustation inoubliable.",
-              autor: "María R., San Francisco"
+              texto: "L'expertise et l'hospitalité de JP sont de classe mondiale. Il possède une maîtrise impressionnante des accords mets-vins et une capacité naturelle à valoriser les invités. Chaque recommandation était juste, et son dévouement à offrir une expérience supérieure était évident tout au long de notre soirée.",
+              autor: "Nora Thomas"
             },
             testimonio2: {
-              texto: "Professionnalisme et charisme. Une soirée mémorable !",
-              autor: "Alejandro M., Los Angeles"
+              texto: "JP possède un talent rare pour raconter des histoires. Sa profonde compréhension du vin et de la cuisine régionale nous a permis de parcourir virtuellement le monde depuis notre table. En partageant la riche histoire et les nuances derrière chaque sélection, il a transformé un simple dîner en un voyage culinaire mondial. Son expertise apporte véritablement le monde à votre verre.",
+              autor: "Maurice Dorlhiac"
             },
             testimonio3: {
-              texto: "Une expérience unique. Nous avons beaucoup appris et apprécié.",
-              autor: "Carla D., Napa Valley"
+              texto: "Véritable sommelier dans l'âme, JP allie des connaissances approfondies à une véritable passion. Chaleureux et accessible, il met chaque invité à l'aise tout en les guidant à travers chaque verre, transformant le vin en une expérience personnelle, mémorable et engageante. Détendu et passionné, JP est le genre de sommelier qui rend le vin sans effort. Avec une approche amicale et sincère et un enthousiasme authentique, il rend chaque verre amusant et mémorable. Passionné de vin, il partage son expertise d'une manière qui semble facile et invitante.",
+              autor: "Cindy Schneider"
             }
           },
           contacto_title: "Contact",
